@@ -1,3 +1,6 @@
+Promise.resolve('{"name":"frank"}')
+    .then(s => JSON.parse(s))
+
 class Promise2 {
     state = 'pending'
     callbacks = []

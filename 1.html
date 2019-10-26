@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <textarea></textarea>  <textarea>ww</textarea>
+    <input/>11
+    <script>
+        let el = document.getElementsByTagName('textarea')
+        Array.from(el).map(item => { item.value.length !== 0 ? item.style = "color:red" : '' })
+    </script>
+</body>
+</html>

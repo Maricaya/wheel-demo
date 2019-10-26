@@ -15,9 +15,7 @@ class DeepClone {
                 if (source instanceof Array) {
                     dist = new Array()
                 } else if (source instanceof Function) {
-                    dist = function () {
-                        return source.apply(this, arguments)
-                    }
+                    dist = function () { return source.apply(this, arguments) }
                 } else if (source instanceof RegExp) {
                     dist = new RegExp(source.source, source.flags)
                 } else if (source instanceof Date) {
